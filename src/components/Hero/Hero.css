@@ -1,0 +1,87 @@
+main {
+    padding: 5rem 10rem 3rem 10rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search select {
+    width: 10rem;
+}
+
+
+/* //! All Imgs */
+.imgs {
+    width: 95%;
+    margin: 0 auto;
+}
+.card {
+    position: relative;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+.card .likes {
+    color: white;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.card .likes i {
+    font-size: 1.6rem;
+}
+.card .download {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    border-radius: 0.4rem;
+}
+
+.card:hover img {
+    filter: brightness(70%);
+}
+
+/* //! Pagination */
+.pagination {
+    width: fit-content;
+    margin: auto;
+    padding: 2rem 0 4rem 0;
+}
+.pagination a {
+    color: black;
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.2rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    text-decoration: none;
+}
+.pagination span {
+    display: grid;
+    place-items: end;
+    margin: 0 0.2rem;
+    font-weight: 700;
+}
+.pagination a:first-child {
+    margin-right: 5rem;
+}
+.pagination a:last-child {
+    margin-left: 5rem;
+}
+
+.pagination a:not(.active):hover {
+    background-color: #f2f2f2;
+}
+
+.pagination .active {
+    color: white;
+    background-color: #30819c;
+}
