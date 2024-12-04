@@ -76,3 +76,38 @@ nav {
 .menus button:hover::before {
     width: 100%;
 }
+
+@media (max-width: 1025px) {
+    .header {
+        padding: 3rem 5rem 0 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        height: 32rem;
+    }
+    .header {
+        padding: 3rem 2.5rem 0 2.5rem;
+    }
+    .header p {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 610px) {
+    nav {
+        height: 32rem;
+    }
+    .header {
+        padding: 3rem 1.5rem 0 1.5rem;
+    }
+    .header p {
+        width: 100%;
+    }
+}
+@media (max-width: 535px) {
+    nav {
+        height: 40rem;
+    }
+}

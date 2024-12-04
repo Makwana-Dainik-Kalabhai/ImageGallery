@@ -61,8 +61,8 @@ function Hero(props) {
                     </div>
                 </div>
                 <hr />
-                <div className="imgs row">
-                    <div className="col-md-4">
+                <div className="imgs row m-0">
+                    <div className="col-md-4 m-0 p-0">
                         {data.map((e, i) => {
                             return (
                                 i < 3 && <div className="card m-3">
@@ -77,7 +77,7 @@ function Hero(props) {
                             )
                         })}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 m-0 p-0">
                         {data.map((e, i) => {
                             return (
                                 i > 2 && i < 6 && <div className="card m-3">
@@ -92,7 +92,7 @@ function Hero(props) {
                             )
                         })}
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 m-0 p-0">
                         {data.map((e, i) => {
                             return (
                                 i > 5 && i < 9 && <div className="card m-3">
