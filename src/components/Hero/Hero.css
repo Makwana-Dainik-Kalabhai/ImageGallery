@@ -127,6 +127,19 @@ main {
     .card {
         margin: 0.5rem auto !important;
     }
+    .card .likes {
+        top: 1.5rem;
+        right: 1rem;
+    }
+    .card .likes i {
+        font-size: 1.1rem;
+    }
+    .card .download {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        padding: 0 0.3rem !important;
+        border-radius: 0.2rem;
+    }
     .pagination a {
         font-size: 0.7rem;
         width: 2rem;
