@@ -76,51 +76,6 @@ function Hero(props) {
                             </div>
                         )
                     })}
-                    {/* <div className="col-md-4">
-                        {data.map((e, i) => {
-                            return (
-                                i < 3 && <div className="card">
-                                    <img src={e.urls.regular} alt={e.alt_description && e.alt_description} />
-                                    <a className="btn btn-light download" href={e.links.download} download><i className="fa-solid fa-arrow-down"></i></a>
-
-                                    <div className="likes">
-                                        <i className="fa-solid fa-heart"></i>
-                                        <span>{e.likes}</span>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-                    <div className="col-md-4">
-                        {data.map((e, i) => {
-                            return (
-                                i > 2 && i < 6 && <div className="card">
-                                    <img src={e.urls.regular !== null ? e.urls.regular : ""} alt={e.alt_description && e.alt_description} />
-                                    <a className="btn btn-light download" href={e.links.download} download><i className="fa-solid fa-arrow-down"></i></a>
-
-                                    <div className="likes">
-                                        <i className="fa-solid fa-heart"></i>
-                                        <span>{e.likes}</span>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-                    <div className="col-md-4">
-                        {data.map((e, i) => {
-                            return (
-                                i > 5 && i < 9 && <div className="card">
-                                    <img src={e.urls.regular} alt={e.alt_description && e.alt_description} />
-                                    <a className="btn btn-light download" href={e.links.download} download><i className="fa-solid fa-arrow-down"></i></a>
-
-                                    <div className="likes">
-                                        <i className="fa-solid fa-heart"></i>
-                                        <span>{e.likes}</span>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                    </div> */}
                 </div>
             </main>
             <div className="pagination">
