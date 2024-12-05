@@ -19,9 +19,6 @@ function Hero(props) {
             props.changeLoad(60);
             setData(data.results);
             props.changeLoad(100);
-            setTimeout(() => {
-                props.changeLoad(0);
-            }, 100);
 
             return;
         }
@@ -34,10 +31,6 @@ function Hero(props) {
         props.changeLoad(60);
         setData(data);
         props.changeLoad(100);
-
-        setTimeout(() => {
-            props.changeLoad(0);
-        }, 100);
     }
 
     useEffect(() => {
@@ -73,6 +66,7 @@ function Hero(props) {
                                     <i className="fa-solid fa-heart"></i>
                                     <span>{e.likes}</span>
                                 </div>
+                                {props.changeLoad(0)}
                             </div>
                         )
                     })}
