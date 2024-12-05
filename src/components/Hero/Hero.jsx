@@ -18,7 +18,12 @@ function Hero(props) {
             const data = await api.json();
             props.changeLoad(60);
             setData(data.results);
-            props.changeLoad(100);
+            setTimeout(() => {
+                props.changeLoad(100);
+            }, 100);
+            setTimeout(() => {
+                props.changeLoad(0);
+            }, 300);
 
             return;
         }
@@ -30,13 +35,18 @@ function Hero(props) {
         const data = await api.json();
         props.changeLoad(60);
         setData(data);
-        props.changeLoad(100);
+
+        setTimeout(() => {
+            props.changeLoad(100);
+        }, 100);
+        setTimeout(() => {
+            props.changeLoad(0);
+        }, 300);
     }
 
     useEffect(() => {
         fetchApi();
     }, [page, search]);
-
 
     return (
         <>
@@ -68,7 +78,6 @@ function Hero(props) {
                                         <span>{e.likes}</span>
                                     </div>
                                 </a>
-                                {props.changeLoad(0)}
                             </div>
                         )
                     })}
