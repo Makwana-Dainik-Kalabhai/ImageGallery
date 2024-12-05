@@ -65,6 +65,7 @@ main {
     bottom: 2rem;
     right: 2rem;
     border-radius: 0.4rem;
+    z-index: 2;
 }
 
 .card .download:focus + .download-options {
@@ -79,6 +80,7 @@ main {
     border-radius: 0.3rem;
     background-color: white;
     overflow: hidden;
+    z-index: 2;
 }
 .card .download-options a {
     display: block;
@@ -201,7 +203,6 @@ main {
     .card .download-options a  span{
         font-size: 0.9rem;
     }
-    
     .pagination a {
         width: 3.5rem;
         height: 3.5rem;
@@ -220,9 +221,6 @@ main {
     }
     .card .original-img {
         height: 30rem;
-    }
-    .card .profile-img {
-        width: 2.4rem;
     }
     .card .download-options {
         right: 1rem;
@@ -253,15 +251,17 @@ main {
         bottom: 0;
         padding: 0;
         width: 100%;
+        filter: brightness(99%);
         background-color: white;
         border-top: 2px solid #f2f2f2;
+        z-index: 3;
     }
     .pagination a {
         width: 100%;
         font-size: 1rem;
         margin: 0 !important;
-        padding: 0.8rem 0;
         text-align: center;
+        padding: 0.8rem 0;
         border-radius: 0;
     }
     .pagination span {
@@ -283,9 +283,6 @@ main {
     }
     .card .original-img {
         height: 23rem;
-    }
-    .card .profile-img {
-        width: 2rem;
     }
     .card .download-options a {
         font-size: 0.8rem;
