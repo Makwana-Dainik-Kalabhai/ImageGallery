@@ -72,8 +72,8 @@ function Hero(props) {
                             <div className="card">
 
                                 <div className="profile">
-                                    {e.sponsorship?.sponsor?.profile_image?.large ? <img className="profile-img" src={e.sponsorship.sponsor.profile_image.large} /> : ""}
-                                    {e.sponsorship?.sponsor?.name ? <span>{e.sponsorship.sponsor.name}</span> : ""}
+                                    {e.user?.profile_image?.large ? <img className="profile-img" src={e.user.profile_image.large} /> : ""}
+                                    {e.user?.name ? <span>{e.user.name}</span> : ""}
                                 </div>
 
                                 <img className="original-img" src={e.urls.regular} alt={e.alt_description && e.alt_description} onClick={()=> {

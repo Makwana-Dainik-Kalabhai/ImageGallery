@@ -42,6 +42,7 @@ main {
     left: 1.5rem;
     bottom: 1.5rem;
     line-height: 1.3;
+    z-index: 1;
 }
 .card .profile-img {
     width: 3.5rem;
@@ -94,6 +95,9 @@ main {
     background-color: #f2f2f2;
 }
 
+.card:hover .original-img {
+    filter: brightness(70%);
+}
 
 /* //! Pagination */
 .pagination {
