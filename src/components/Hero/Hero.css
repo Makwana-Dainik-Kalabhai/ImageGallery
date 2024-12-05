@@ -246,14 +246,12 @@ main {
         border-radius: 0.2rem;
     }
     .pagination {
+        width: 100%;
         position: fixed;
         left: 0;
         bottom: 0;
         padding: 0;
-        width: 100%;
-        filter: brightness(99%);
-        background-color: white;
-        border-top: 2px solid #f2f2f2;
+        filter: brightness(96%);
         z-index: 3;
     }
     .pagination a {
@@ -261,8 +259,9 @@ main {
         font-size: 1rem;
         margin: 0 !important;
         text-align: center;
-        padding: 0.8rem 0;
+        padding: 0.7rem 0;
         border-radius: 0;
+        background-color: white;
     }
     .pagination span {
         display: none;
