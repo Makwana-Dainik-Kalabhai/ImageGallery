@@ -58,14 +58,16 @@ function Hero(props) {
                 <div className="imgs row m-0">
                     {data.map((e, i) => {
                         return (
-                        <div className="card">
-                                <img src={e.urls.regular} alt={e.alt_description && e.alt_description} />
-                                <a className="btn btn-light download" href={e.links.download} download><i className="fa-solid fa-arrow-down"></i></a>
+                            <div className="card">
+                                <a href={e.links.download}>
+                                    <img src={e.urls.regular} alt={e.alt_description && e.alt_description} />
+                                    <a className="btn btn-light download" href={e.links.download} download><i className="fa-solid fa-arrow-down"></i></a>
 
-                                <div className="likes">
-                                    <i className="fa-solid fa-heart"></i>
-                                    <span>{e.likes}</span>
-                                </div>
+                                    <div className="likes">
+                                        <i className="fa-solid fa-heart"></i>
+                                        <span>{e.likes}</span>
+                                    </div>
+                                </a>
                                 {props.changeLoad(0)}
                             </div>
                         )
