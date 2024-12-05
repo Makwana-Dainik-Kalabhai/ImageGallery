@@ -1,4 +1,5 @@
 main {
+    position: relative;
     padding: 5rem 10rem 3rem 10rem;
 }
 
@@ -14,18 +15,20 @@ main {
 
 /* //! All Imgs */
 .imgs {
-    width: 95%;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .card {
     position: relative;
-    width: 100%;
+    width: 31.5%;
     padding: 0.8rem;
+    margin: 1rem auto;
 }
-
 .card img {
     width: 100%;
+    height: 100%;
     border-radius: 0.3rem;
+    object-fit: cover;
 }
 .card .likes {
     color: white;
@@ -96,6 +99,15 @@ main {
     main {
         padding: 3rem 2.5rem 0 2.5rem;
     }
+    .card {
+        width: 47%;
+    }
+    .pagination a:first-child {
+        margin-right: 1rem;
+    }
+    .pagination a:last-child {
+        margin-left: 1rem;
+    }
 }
 
 @media (max-width: 610px) {
@@ -103,56 +115,74 @@ main {
         padding: 3rem 1.5rem 0 1.5rem;
     }
     .card {
-        width: 100%;
+        width: 80%;
     }
     .pagination a {
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
         margin: 0 0.1rem;
-    }
-    .pagination a:first-child {
-        display: block;
-        margin-right: 1.5rem;
-    }
-    .pagination a:last-child {
-        display: block;
-        margin-left: 1.5rem;
+        line-height: 0;
     }
 }
 
 @media (max-width: 535px) {
     main {
         padding: 3rem 1.5rem 0 1.5rem;
+        height: 100%;
     }
     .card {
-        margin: 0.5rem auto !important;
+        width: 100%;
     }
     .card .likes {
         top: 1.5rem;
-        right: 1rem;
+        right: 1.5rem;
     }
     .card .likes i {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     .card .download {
         bottom: 1.5rem;
         right: 1.5rem;
-        padding: 0 0.3rem !important;
+        padding: 0.5rem 0.7rem !important;
         border-radius: 0.2rem;
     }
+    .pagination {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        width: 100%;
+        background-color: white;
+        border-top: 2px solid #f2f2f2;
+    }
     .pagination a {
-        font-size: 0.7rem;
-        width: 2rem;
-        height: 2rem;
-        margin: 0 0.1rem;
-    }
-    .pagination a:first-child {
-        margin-right: 0.7rem;
-    }
-    .pagination a:last-child {
-        margin-left: 0.7rem;
+        width: 100%;
+        font-size: 0.9rem;
+        margin: 0 !important;
+        padding: 0.8rem 0;
+        text-align: center;
+        border-radius: 0;
     }
     .pagination span {
         display: none;
+    }
+}
+@media (max-width: 350px) {
+    main {
+        width: 95%;
+        padding: 3rem 0.5rem 0 0.5rem;
+    }
+    .imgs {
+        padding: 0;
+    }
+    .card {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+    .pagination a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0;
     }
 }

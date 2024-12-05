@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      <Navbar load={load} />
-      <Hero  changeLoad={changeLoad} />
+      <Navbar key="Navbar" load={load} />
+      <Hero key="Hero" changeLoad={changeLoad} />
     </>
   );
 }

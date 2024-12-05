@@ -108,6 +108,12 @@ nav {
 }
 @media (max-width: 535px) {
     nav {
-        height: 40rem;
+        height: 33rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        padding: 3rem 1rem 0 1rem;
     }
 }
